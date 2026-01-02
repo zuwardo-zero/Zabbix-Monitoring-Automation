@@ -24,9 +24,13 @@ Next, we'll need to download the necessary zabbix packages in both machines.
 In the agent machine we'll have to modify the configuration file in order to connect to the zabbix server.
 <img width="1366" height="768" alt="Screenshot from 2026-01-01 00-29-30" src="https://github.com/user-attachments/assets/e1d339da-c611-42f7-bc81-bccfddb8eb3f" />
 To install the nginx setup we can type the following command :
+
 ```sudo apt install nginx```
+
 also we should create a firewall rule to allow traffic on port 10051 (Zabbix default port) for incoming agent data.
+
 ```sudo ufw allow 10500/tcp```
+
 Phase B: Monitoring and troubleshooting
 
 We should be able to find an  interface in localhost/zabbix in which we'll have to input the previous sql credentials to import our database schema and follow the installation process.
@@ -48,13 +52,17 @@ In this test we will configure an automated script in order to restore nginx bac
 First we will configure the paramaters for our vm, and add it to the nginx template.
 <img width="1155" height="618" alt="Screenshot from 2026-01-02 22-46-52" src="https://github.com/user-attachments/assets/fb6817e6-92ec-4995-aba9-030432eb5e21" />
 We can stop the nginx service for now by typing the following command in the machine agent.
+
 ```sudo systemctl stop nginx```
+
 Let's also add the incident response command in the sudoers file of the agent machine to require no passwords, this should not cause a security problem since it does not involve critical privileges or access to any files.
 <img width="1366" height="768" alt="Screenshot from 2026-01-01 01-50-20" src="https://github.com/user-attachments/assets/cfa28c70-7e16-4746-876e-d3c03c479e6c" />
 Next we should create the automated respone script by heading to Alerts --> scripts and write the command
 <img width="1155" height="618" alt="Screenshot from 2026-01-02 22-54-32" src="https://github.com/user-attachments/assets/3a7b173b-c9e2-478a-aef0-1944c102bf59" />
 Keep in mind that we can also execute it manually from the server CLI with the following command 
+
 ```zabbix_get -s 192.168.1.147 -k "system.run[sudo systemctl start nginx]"```
+
 We can create the operation by heading to Alerts --> Actions and add the script we made
 <img width="1147" height="611" alt="Screenshot from 2026-01-02 23-11-08" src="https://github.com/user-attachments/assets/42b257f9-e984-4890-a548-23135778fc47" />
 
