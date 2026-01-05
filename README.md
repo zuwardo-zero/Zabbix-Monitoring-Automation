@@ -71,10 +71,11 @@ We can create the operation by heading to Alerts --> Actions and add the script 
 Finally, we can check that the command was successfuly executed, which results in restoring the service.
 
 We can check this by going to Reports --> Action logs
-<img width="1366" height="768" alt="Screenshot from 2026-01-01 01-58-00" src="https://github.com/user-attachments/assets/79cb346b-72ee-46c1-878c-0b534666c18f" />
+
+<img width="1147" height="611" alt="Screenshot from 2026-01-02 23-14-39" src="https://github.com/user-attachments/assets/bc97328d-0cc4-45e7-9fff-05e64d819319" />
 
 Summary:
-With the correct architecture for zabbix server and agents, we can created automated scripts to troubleshoot and fix common service failures and reduce downtime  without the need for human intervention.
+With a clear architecture for zabbix server and agents, we can created automated scripts to troubleshoot and fix common service failures and reduce downtime  without the need for human intervention.
 
 
 
