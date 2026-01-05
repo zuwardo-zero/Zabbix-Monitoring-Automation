@@ -48,6 +48,7 @@ Another test we can do is to apply some stress on our host server in order to ch
 <img width="1148" height="623" alt="Screenshot from 2026-01-02 22-22-49" src="https://github.com/user-attachments/assets/11deddfe-11da-4ede-9322-b80a8c405b7f" />
 
 Phase C:Restoring failed web services with script automation
+
 In this test we will configure an automated script in order to restore nginx back on after a failure.
 
 First we will configure the paramaters for our vm, and add it to the nginx template.
@@ -71,7 +72,7 @@ Finally, we can check that the command was successfuly executed by going to Repo
 <img width="1366" height="768" alt="Screenshot from 2026-01-01 01-58-00" src="https://github.com/user-attachments/assets/79cb346b-72ee-46c1-878c-0b534666c18f" />
 
 Summary:
-With the correct configuration for zabbix server and agents, we can created automated scripts to troubleshoot and fix common service failure without the need for human intervention.
+With the correct architecture for zabbix server and agents, we can created automated scripts to troubleshoot and fix common service failures and reduce downtime  without the need for human intervention.
 
 
 
