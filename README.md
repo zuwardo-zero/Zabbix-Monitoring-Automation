@@ -68,7 +68,9 @@ Keep in mind that we can also execute it manually from the server CLI with the f
 We can create the operation by heading to Alerts --> Actions and add the script we made
 <img width="1147" height="611" alt="Screenshot from 2026-01-02 23-11-08" src="https://github.com/user-attachments/assets/42b257f9-e984-4890-a548-23135778fc47" />
 
-Finally, we can check that the command was successfuly executed by going to Reports --> Action logs
+Finally, we can check that the command was successfuly executed, which results in restoring the service.
+
+We can check this by going to Reports --> Action logs
 <img width="1366" height="768" alt="Screenshot from 2026-01-01 01-58-00" src="https://github.com/user-attachments/assets/79cb346b-72ee-46c1-878c-0b534666c18f" />
 
 Summary:
