@@ -75,7 +75,10 @@ We can check this by going to Reports --> Action logs
 <img width="1147" height="611" alt="Screenshot from 2026-01-02 23-14-39" src="https://github.com/user-attachments/assets/bc97328d-0cc4-45e7-9fff-05e64d819319" />
 
 Summary:
+
 With a clear architecture for zabbix server and agents, we can created automated scripts to troubleshoot and fix common service failures and reduce downtime  without the need for human intervention.
+
+
 
 
 
