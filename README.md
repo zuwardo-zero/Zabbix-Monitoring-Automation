@@ -6,7 +6,7 @@ Tech Stack:Virtual Box, Host Ubuntu 24.04 (Server), VM Linux Mint 22 (Agent/Node
    
 This personal documentation covers the deployment of a centralized monitoring solution capable of real-time performance tracking and automated incident response (Self-Healing). I built a Zabbix 7.0 environment from scratch, integrated a remote Linux node, and configured script automation to restore failed web services without manual intervention.
 
-3. Architecture & Implementation
+2. Architecture & Implementation
 
 Phase A: Envirnoment Setup
 In Virutal box, we can start by creating the virtual machine in which we will set as the nginx server, Mint OS is used for it's lightweight packages.
